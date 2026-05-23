@@ -138,7 +138,7 @@ Once it is finished, it starts the OpenSBI bootloader and the boot process begin
 
 ## Peripheral test
 
-To check that everything is working, a simple test can be performed by accessing the peripheral's registers with `devmem2`. The program should be loaded in the SD card and mounted to Wally as explained [here](https://github.com/mmiral04/cvw/edit/main/README.md#compilation-and-use-of-c-programs).
+To check that everything is working, a simple test can be performed by accessing the peripheral's registers with `devmem2`. The program should be loaded in the SD card and mounted to Wally as explained [here](https://github.com/mmiral04/cvw_apb_peripheral#compilation-and-use-of-c-programs).
 To test the peripheral:
 
 ```bash
@@ -657,7 +657,7 @@ Then when flashing the SD card with the corresponding script, the `-d` specifies
 $ $WALLY/linux/sdcard/flash-sd.sh -b $RISCV/buildroot -d $WALLY/linux/devicetree/wally-nexysa7.dtb /dev/sda
 ```
 
-After flashing, we can boot Linux again and repeat the test with `devmem2` explained [previously](https://github.com/mmiral04/cvw/edit/main/README.md#compilation-and-use-of-c-programs) to check that everything is working correctly.
+After flashing, we can boot Linux again and repeat the test with `devmem2` explained [previously](https://github.com/mmiral04/cvw_apb_peripheral#compilation-and-use-of-c-programs) to check that everything is working correctly.
 
 ## Linux driver
 
